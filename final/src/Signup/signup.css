@@ -1,0 +1,230 @@
+/* Main Container */
+.signup-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Content Container */
+.signup-content-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+.wave-emoji{
+  display: inline-block;
+  font-size: 32px;
+  animation: wave-animation 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0.0deg); }
+  10% { transform: rotate(14.0deg); }
+  20% { transform: rotate(-8.0deg); }
+  30% { transform: rotate(14.0deg); }
+  40% { transform: rotate(-4.0deg); }
+  50% { transform: rotate(10.0deg); }
+  60% { transform: rotate(0.0deg); }
+  100% { transform: rotate(0.0deg); }
+}
+
+/* Form Section */
+.signup-form-section {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header .logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.form-header h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+.form-row {
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #4361ee;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.input-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.signup-button:hover {
+  background-color: #3a56d4;
+  transform: translateY(-2px);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.auth-footer a {
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Visual Section */
+.signup-visual-section {
+  flex: 1;
+  background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.visual-content {
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.welcome-animation {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-message h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-message p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Decorative Elements */
+.signup-visual-section::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  top: -50px;
+  right: -50px;
+}
+
+.signup-visual-section::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  bottom: -30px;
+  left: -30px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .signup-content-container {
+    flex-direction: column;
+  }
+
+  .signup-visual-section {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .signup-page-container {
+    padding: 1rem;
+  }
+
+  .signup-form-section {
+    padding: 2rem;
+  }
+
+  .form-header h2 {
+    font-size: 1.5rem;
+  }
+}
+

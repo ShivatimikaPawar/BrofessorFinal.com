@@ -1,0 +1,88 @@
+.Toggle {
+    position: absolute;
+    right: 10px;
+    width: 35px;
+    padding: 10px 0;
+    top: 2px;
+}
+
+.Togglecontainer {  
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #020a2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.4s ease;
+}
+
+.light-mode .Togglecontainer {
+  background-color: #ffffff;
+}
+
+#themeToggle {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  width: 100%;
+  height: 100%;
+}
+
+#themeToggle:hover {
+  transform: scale(1.15) rotate(10deg);
+}
+
+/* Global theme variables */
+:root {
+  --bg: linear-gradient(to bottom, #111a3f, #0d1429);
+  --head: #ffffff;
+  --con: #ffd5f0;;
+  --laugh:#5b5f9b;
+  --subtext:#fff9b3;
+  --so: #466ccb;
+  --text: rgb(255, 255, 238);
+  --slider: #3590ffe7;
+  --slider1: #ffc7f9;
+  --scrollimg: #ffe2f5;
+  --black: #000000;
+  --white: #ffffff;
+  --to: #1b3585;
+  --button: #f4a0da;
+  --box: #fffedc;
+  --cards: #111d45df;
+}
+
+.light-mode { 
+  --bg: linear-gradient(to bottom, #f0f4ff, #fffbc2);
+  --head: #1e377d;
+  --con: #7ca1ff;
+  --laugh:#fffffff6;
+  --subtext:orange;
+  --so:var(--white);
+  --text: #8790a4;
+  --slider: #fff9b3;
+  --slider1: #ffffff;
+  --scrollimg: #9abfff;
+  --black: #ffffff;
+  --button: #fcce6c;
+   --to: #1b3585;
+  --box: #1b3585;
+  --cards: #daebffe5;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}

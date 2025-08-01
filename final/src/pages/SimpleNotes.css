@@ -1,0 +1,72 @@
+.notes-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.notes-header {
+  margin-bottom: 20px;
+}
+
+.notes-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.notes-header p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+.notes-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.notes-content h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+  color: #444;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.checklist li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.checklist input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checklist label {
+  display: inline-block;
+}
+
+.opportunity-text {
+  margin-top: 20px;
+}
+
+.opportunity-text a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.opportunity-text a:hover {
+  text-decoration: underline;
+}

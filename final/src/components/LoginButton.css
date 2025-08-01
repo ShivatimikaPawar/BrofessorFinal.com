@@ -1,0 +1,61 @@
+.Login{
+  height: 30px;
+  position: absolute;
+  right: 50px;
+}
+
+.login-container {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+}
+
+/* Base Button Styles */
+.login-btn {
+  height: 32px;
+  padding: 5px 2px;
+  margin-bottom: 6px;
+  background: rgb(255, 255, 255);
+  border: #ffe065;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Google Icon Styles */
+.google-icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Login Text Styles - Hidden by default */
+.login-text {
+  color: #011120;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Galindo', sans-serif;
+  padding-top: 5px;
+  margin-left: 4px; 
+  opacity: 0;
+  width: 0;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Hover Effects */
+.login-btn:hover .login-text {
+  opacity: 1;
+  width: auto;
+  margin-left: 4px;
+}
+
+/* Similar to search input transition */
+.login-btn:hover {
+  background: rgba(255, 255, 255, 0.904);
+  border-radius: 6px;
+}

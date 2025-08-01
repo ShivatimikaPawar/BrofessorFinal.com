@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  
+}
+
+.header {
+  text-align: center;
+  padding: 40px;
+}
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+}

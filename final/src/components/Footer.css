@@ -1,0 +1,80 @@
+.footer {
+  background-color: #3b36aa; /* blue bg as in screenshot */
+  color: white;
+  padding: 40px 20px 80px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Top nav */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #ffc107;
+}
+
+/* Contact center section */
+.footer-contact-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.footer-contact-icons div span {
+  margin-right: 10px;
+}
+
+/* Bottom-left team info */
+.footer-bottom-left {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 6px;
+}
+
+/* Chatbot floating button */
+.chatbot-launch-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.chatbot-circle img {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+
+.chatbot-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+}
+
+
+
